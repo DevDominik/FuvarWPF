@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Fuvar" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnOsszesFuvar" Content="ÖSSZES FUVAR" Margin="40 20" Click="btnOsszesFuvar_Click"></Button>
+        <Label x:Name="lbOsszesFuvar" Grid.Column="1" Content="n/a" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <ComboBox x:Name="cbTaxi" Grid.Row="1" Margin="30 20" SelectionChanged="cbTaxi_SelectionChanged"></ComboBox>
+        <Label x:Name="lbTaxi" Grid.Row="1" Grid.Column="1" Content="n/a" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Button x:Name="btnFizetesiModok" Content="FIZETÉSI MÓDOK" Grid.Row="2" Margin="40 50" Click="btnFizetesiModok_Click"></Button>
+        <ListBox x:Name="lsbFizetesiModok" Grid.Row="2" Grid.Column="1" Margin="10"></ListBox>
+        <Button x:Name="btnOsszesTav" Grid.Column="0" Grid.Row="3" Content="ÖSSZES MEGTETT TÁVOLSÁG" Margin="40 20" Click="btnOsszesTav_Click"></Button>
+        <Label x:Name="lbOsszesTav" Grid.Row="3" Grid.Column="1" Content="n/a" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Button x:Name="btnLeghosszabbFuvar" Grid.Column="0" Grid.Row="4" Content="LEGHOSSZABB FUVAR" Margin="40 60" Click="btnLeghosszabbFuvar_Click"></Button>
+        <ListBox x:Name="lsbLeghosszabbFuvar" Grid.Row="4" Grid.Column="1" Margin="10"></ListBox>
+    </Grid>
+</Window>
